@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page -Resto Adi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7U4yV6o2sW8+fV5bZ6RZoyR2KnhU3F7V4mjhA9HwlK6y6y8LzI0EIRpYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-KM8HpDfNE5MhvOv7zV1HqS6XfRbT+F+bflWlpFOV0TQx2RW++pl1eN5eYxTfXv3OaBQj7FjFZp0bR3Qx0Yp3AQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="nav__brand">RestoAdi</div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav__list" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#service" class="nav__link">Layanan</a></li>
+                <li><a href="#menu" class="nav__link">Menu</a></li>
+                <li><a href="#about" class="nav__link">Tentang Kami</a></li>
+                <li><a href="#contact" class="nav__link">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('slide/slide\ \(1\).jpg');"></div>
+            <div class="slide" style="background-image: url('slide/slide\ \(2\).jpg');"></div>
+            <div class="slide" style="background-image: url('slide/slide\ \(3\).jpg');"></div>
+        </div>
+
+        <!-- Konten header -->
+        <div class="header__content">
+            <h1 class="header__title">Selamat Datang di <span>RestoAdi</span></h1>
+            <p class="header__subtitle">Cita rasa Nusantara dalam setiap hidangan</p>
+        </div>
+    </header>
+
+    <section class="best-seller">
+        <div class="carousel" id="bestCarousel">
+            <div class="best-slides" id="bestSlides">
+                <article class="best-slide">
+                    <div class="dish-card nasi-goreng">
+                        <h4 class="dish-title">Nasi Goreng</h4>
+                        <p class="dish-desc">Nasi yang digoreng dengan bumbu kecap manis, bawang putih, cabai, dan
+                            telur.</p>
+                        <div class="meta">
+                            <div class="buyers"><span class="dot"></span><span>1.300 pembeli</span></div>
+                            <div class="price">Rp15.000</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="best-slide">
+                    <div class="dish-card es-campur">
+                        <h4 class="dish-title">Es Campur</h4>
+                        <p class="dish-desc">Campuran buah, agar-agar, tape, dan sirup manis dengan es serut.</p>
+                        <div class="meta">
+                            <div class="buyers"><span class="dot"></span><span>850 pembeli</span></div>
+                            <div class="price">Rp10.000</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="best-slide">
+                    <div class="dish-card soto-ayam">
+                        <h4 class="dish-title">Soto Ayam</h4>
+                        <p class="dish-desc">Sup ayam kuning dengan bihun, telur rebus, dan bawang goreng.</p>
+                        <div class="meta">
+                            <div class="buyers"><span class="dot"></span><span>1.203 pembeli</span></div>
+                            <div class="price">Rp13.000</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="controls">
+                <button id="bestPrev">◀</button>
+                <button id="bestNext">▶</button>
+            </div>
+
+            <div class="indicators" id="bestIndicators"></div>
+        </div>
+    </section>
+
+
+
+    <section class="services" id="service">
+        <h2 class="services__title">Our Services</h2>
+        <p class="services__subtitle">Kami hadir memberikan pengalaman kuliner terbaik untuk Anda</p>
+
+        <div class="services__grid">
+            <!-- Layanan 1 -->
+            <div class="service-card">
+                <div class="service-card__icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3 class="service-card__title">Makan di Tempat</h3>
+                <p class="service-card__desc">Nikmati suasana nyaman dengan interior elegan dan pelayanan ramah dari
+                    staf profesional kami.</p>
+            </div>
+
+            <!-- Layanan 2 -->
+            <div class="service-card">
+                <div class="service-card__icon"><i class="fa-solid fa-motorcycle"></i></div>
+                <h3 class="service-card__title">Pesan Antar</h3>
+                <p class="service-card__desc">Lapar tapi malas keluar rumah? Kami siap antar pesanan Anda dengan cepat
+                    dan aman.</p>
+            </div>
+
+            <!-- Layanan 3 -->
+            <div class="service-card">
+                <div class="service-card__icon"><i class="fa-solid fa-calendar-days"></i></div>
+                <h3 class="service-card__title">Catering & Event</h3>
+                <p class="service-card__desc">Sajikan makanan terbaik di acara Anda — tersedia paket catering untuk
+                    pesta dan rapat.</p>
+            </div>
+
+            <!-- Layanan 4 -->
+            <div class="service-card">
+                <div class="service-card__icon"><i class="fa-solid fa-mobile"></i></div>
+                <h3 class="service-card__title">Reservasi Online</h3>
+                <p class="service-card__desc">Pesan meja dengan mudah melalui website kami, tanpa antre dan tanpa ribet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2 class="menu__title">Menu Food & Drink</h2>
+        <p class="menu__subtitle">Nikmati sajian terbaik dari dapur kami</p>
+
+        <div class="menu__grid">
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Nasi Goreng</h3>
+                    <p class="menu-card__desc">Nasi yang digoreng dengan bumbu kecap manis, bawang putih, cabai, dan
+                        telur.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 15.000</span>
+                        <button class="btn btn--detail" data-name="Nasi Goreng" data-desc="➤ Nasi yang digoreng dengan bumbu kecap manis, bawang putih, cabai, dan telur.
+➤ Biasanya disajikan dengan ayam, udang, atau sosis.
+➤ Asal: Seluruh Indonesia." data-price="Rp 15.000" data-img="img/menu.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Rendang</h3>
+                    <p class="menu-card__desc">Daging sapi dimasak dengan santan dan rempah-rempah selama berjam-jam
+                        hingga empuk.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 20.000</span>
+                        <button class="btn btn--detail" data-name="Rendang" data-desc="➤ Daging sapi dimasak dengan santan dan rempah-rempah selama berjam-jam hingga empuk.
+➤ Asal: Sumatera Barat (Minangkabau)." data-price="Rp 20.000" data-img="img/food (6).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Sate Ayam</h3>
+                    <p class="menu-card__desc">Daging ayam atau kambing ditusuk, dibakar, dan disajikan dengan saus
+                        kacang.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 18.000</span>
+                        <button class="btn btn--detail" data-name="Sate Ayam" data-desc="➤ Daging ayam atau kambing ditusuk, dibakar, dan disajikan dengan saus kacang.
+➤ Asal: Jawa." data-price="Rp 18.000" data-img="img/food (4).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Gado-Gado</h3>
+                    <p class="menu-card__desc">Campuran sayuran rebus dengan saus kacang dan kerupuk.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 15.000</span>
+                        <button class="btn btn--detail" data-name="gado-gado" data-desc="➤ Campuran sayuran rebus dengan saus kacang dan kerupuk.
+➤ Asal: Jakarta." data-price="Rp 15.000" data-img="img/food (3).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Soto Ayam</h3>
+                    <p class="menu-card__desc">Sup ayam kuning dengan bihun, telur rebus, dan bawang goreng.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 13.000</span>
+                        <button class="btn btn--detail" data-name="Soto Ayam" data-desc="➤ Sup ayam kuning dengan bihun, telur rebus, dan bawang goreng.
+➤ Asal: Jawa Timur." data-price="Rp 13.000" data-img="img/food (2).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Bakso</h3>
+                    <p class="menu-card__desc">Bola daging sapi disajikan dengan kuah kaldu, mie, dan tahu.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 15.000</span>
+                        <button class="btn btn--detail" data-name="Bakso" data-desc="➤ Bola daging sapi disajikan dengan kuah kaldu, mie, dan tahu.
+➤ Asal: Seluruh Indonesia." data-price="Rp 15.000" data-img="img/food (1).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Gudeg</h3>
+                    <p class="menu-card__desc">Nangka muda dimasak dengan santan dan gula jawa hingga manis.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 17.000</span>
+                        <button class="btn btn--detail" data-name="Gudeg" data-desc="➤ Nangka muda dimasak dengan santan dan gula jawa hingga manis.
+➤ Asal: Yogyakarta." data-price="Rp 17.000" data-img="img/food (5).jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Ketoprak</h3>
+                    <p class="menu-card__desc">Ketoprak adalah makanan khas Betawi berbahan tahu, bihun, lontong, kacang.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 15.000</span>
+                        <button class="btn btn--detail" data-name="Ketoprak" data-desc="➤ Ketoprak adalah makanan khas Betawi berbahan tahu, bihun, lontong, kacang.
+➤ Asal: Betawi." data-price="Rp 15.000" data-img="img/food.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Es Dawet</h3>
+                    <p class="menu-card__desc">Campuran tepung hijau, santan, gula merah cair, dan es batu.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 8.000</span>
+                        <button class="btn btn--detail" data-name="Es Dawet" data-desc="➤ Campuran tepung hijau, santan, gula merah cair, dan es batu.
+➤ Asal: Jawa Tengah." data-price="Rp 8.000" data-img="img/drink.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Es Campur</h3>
+                    <p class="menu-card__desc">Campuran buah, agar-agar, tape, dan sirup manis dengan es serut.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 10.000</span>
+                        <button class="btn btn--detail" data-name="Es Campur" data-desc="➤ Campuran buah, agar-agar, tape, dan sirup manis dengan es serut.
+➤ Asal: Seluruh Indonesia." data-price="Rp 10.000" data-img="img/ice.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Es Teler</h3>
+                    <p class="menu-card__desc">Campuran alpukat, kelapa muda, nangka, sirup, susu kental manis, dan es.
+                    </p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 10.000</span>
+                        <button class="btn btn--detail" data-name="Es Teler" data-desc="➤ Campuran alpukat, kelapa muda, nangka, sirup, susu kental manis, dan es.
+➤ Asal: Jawa Barat." data-price="Rp 10.000" data-img="img/download.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-card__info">
+                    <h3 class="menu-card__name">Teh Tarik</h3>
+                    <p class="menu-card__desc">Teh susu yang ditarik berulang-ulang hingga berbuih.</p>
+                    <div class="menu-card__bottom">
+                        <span class="menu-card__price">Rp 8.000</span>
+                        <button class="btn btn--detail" data-name="Teh Tarik" data-desc="➤ Teh susu yang ditarik berulang-ulang hingga berbuih.
+➤ Asal: Aceh / Sumatera." data-price="Rp 8.000" data-img="img/teh tarik.jpg">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP MODAL DETAIL MENU -->
+    <div class="menu-modal" id="menuModal">
+        <div class="menu-modal__content">
+            <span class="menu-modal__close">&times;</span>
+            <img src="" alt="Detail Menu" class="menu-modal__img">
+            <h3 class="menu-modal__name"></h3>
+            <p class="menu-modal__desc"></p>
+            <div class="menu-modal__price"></div>
+        </div>
+    </div>
+
+    <section class="team" id="about">
+        <h2 class="team__title">About Us</h2>
+        <p class="team__subtitle">Tim kelompok 8</p>
+
+        <div class="team__grid">
+            <!-- ANGGOTA 1 -->
+            <div class="team-card">
+                <img src="img/pp.jpg" alt="Boy" class="team-card__img">
+                <h3 class="team-card__name">Boy Aprilian</h3>
+                <p class="team-card__role">Ketua Kelompok</p>
+                <p class="team-card__desc">Bertugas HTML</p>
+            </div>
+
+            <!-- ANGGOTA 2 -->
+            <div class="team-card">
+                <img src="img/pp.jpg" alt="Davin" class="team-card__img">
+                <h3 class="team-card__name">Davin Adi Pratama</h3>
+                <p class="team-card__role">Anggota</p>
+                <p class="team-card__desc">Bertugas Style CSS</p>
+            </div>
+
+            <!-- ANGGOTA 3 -->
+            <div class="team-card">
+                <img src="img/pp.jpg" alt="Fajar" class="team-card__img">
+                <h3 class="team-card__name">M.Fajar Rahmadani</h3>
+                <p class="team-card__role">Anggota</p>
+                <p class="team-card__desc">Bertugas Style CSS</p>
+            </div>
+
+            <!-- ANGGOTA 4 -->
+            <div class="team-card">
+                <img src="img/pp.jpg" alt="Akram" class="team-card__img">
+                <h3 class="team-card__name">M.Akram Khasyaif</h3>
+                <p class="team-card__role">Anggota</p>
+                <p class="team-card__desc">Bertugas Script js</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION RATING -->
+    <section id="rating" class="rating">
+        <div class="rating-card">
+            <div class="overall">
+                <div class="overall-left">
+                    <div class="big-score" id="overall-score">4.9</div>
+                    <div class="big-stars stars" data-rating="4.9" aria-hidden="true"></div>
+                    <div class="vote-count" id="vote-count">2.834 ulasan</div>
+                </div>
+                <div class="overall-right">
+                    <p class="summary">Ringkasan: Restoran bersih, makanan enak, pelayanan ramah. Cocok untuk keluarga
+                        dan hangout.</p>
+                </div>
+            </div>
+
+            <div class="categories">
+                <!-- Template kategori (akan diisi/dirender ulang oleh JS) -->
+                <div class="cat">
+                    <div class="cat-name">Kebersihan</div>
+                    <div class="cat-right">
+                        <div class="stars small stars" data-rating="4.9" aria-hidden="true"></div>
+                        <div class="cat-num">4.9</div>
+                        <div class="cat-percent">
+                            <div class="bar">
+                                <div class="bar-fill" style="width:96%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="cat-name">Rasa</div>
+                    <div class="cat-right">
+                        <div class="stars small stars" data-rating="4.8" aria-hidden="true"></div>
+                        <div class="cat-num">4.8</div>
+                        <div class="cat-percent">
+                            <div class="bar">
+                                <div class="bar-fill" style="width:90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="cat-name">Pelayanan</div>
+                    <div class="cat-right">
+                        <div class="stars small stars" data-rating="5.0" aria-hidden="true"></div>
+                        <div class="cat-num">5.0</div>
+                        <div class="cat-percent">
+                            <div class="bar">
+                                <div class="bar-fill" style="width:100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="cat-name">Harga</div>
+                    <div class="cat-right">
+                        <div class="stars small stars" data-rating="4.7" aria-hidden="true"></div>
+                        <div class="cat-num">4.7</div>
+                        <div class="cat-percent">
+                            <div class="bar">
+                                <div class="bar-fill" style="width:80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="cat-name">Suasana</div>
+                    <div class="cat-right">
+                        <div class="stars small stars" data-rating="4.9" aria-hidden="true"></div>
+                        <div class="cat-num">4.9</div>
+                        <div class="cat-percent">
+                            <div class="bar">
+                                <div class="bar-fill" style="width:86%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-feedback">
+                <h4>Ulasan singkat</h4>
+                <p id="short-review">"Tempatnya bersih, makanannya enak, pelayanannya cepat. Recommended!"</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="contact" id="contact">
+        <div class="contact__container">
+            <!-- Kiri -->
+            <div class="contact__info">
+                <h3 class="contact__title">Hubungi Kami</h3>
+                <p class="contact__item"><i class="fa-solid fa-envelope"></i> Email: <a
+                        href="mailto:resto@example.com">restoadi@example.com</a></p>
+                <p class="contact__item"><i class="fa-solid fa-phone-volume"></i> Telepon: <a
+                        href="tel:+6281234567890">+62 812-9090-2393</a></p>
+                <p class="contact__copy">© 2025 RestoAdi. Resto Top 1 Indonesia.</p>
+            </div>
+
+            <!-- Kanan -->
+            <div class="contact__socials">
+                <h3 class="contact__title">Ikuti Kami</h3>
+                <div class="social__links">
+                    <a href="#" class="social__link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social__link" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social__link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
